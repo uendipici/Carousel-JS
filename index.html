@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body style="background-color: rgb(170, 146, 146);">
+    <div class="container">
+       <div class="slide">
+        <div class=" item" style="background-image:url(assets/shqiperia.jpg)">
+            <div class="content">
+                <div class="name">uendi</div>
+                <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vel voluptatum ducimus quasi itaque reiciendis in exercitationem quisquam, repellendus totam eos? Quis suscipit quia dignissimos itaque nam ea accusamus omnis!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image:url(assets/rumani.jpg);">
+                <div class="content">
+                    <div class="name">DEA</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nesciunt expedita facilis cupiditate est porro, dicta maiores quaerat sunt ea, repellendus unde optio nemo eos earum, recusandae ipsa dolorum quidem.</div>
+                     <button>See More</button>
+                    </div>
+            </div>
+            <div class="item" style="background-image:url(assets/turqi.jpg) ;">
+                <div class="content">
+                    <div class="name">DEA</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nesciunt expedita facilis cupiditate est porro, dicta maiores quaerat sunt ea, repellendus unde optio nemo eos earum, recusandae ipsa dolorum quidem.</div>
+                     <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image:url(assets/Zvicra.jpg) ;">
+                <div class="content">
+                    <div class="name">DEA</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nesciunt expedita facilis cupiditate est porro, dicta maiores quaerat sunt ea, repellendus unde optio nemo eos earum, recusandae ipsa dolorum quidem.</div>
+                     <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image:url(assets/turqi.jpg) ;">
+                <div class="content">
+                    <div class="name">DEA</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nesciunt expedita facilis cupiditate est porro, dicta maiores quaerat sunt ea, repellendus unde optio nemo eos earum, recusandae ipsa dolorum quidem.</div>
+                     <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image:url(assets/turqi.jpg) ;">
+                <div class="content">
+                    <div class="name">DEA</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nesciunt expedita facilis cupiditate est porro, dicta maiores quaerat sunt ea, repellendus unde optio nemo eos earum, recusandae ipsa dolorum quidem.</div>
+                     <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image:url(assets/turqi.jpg) ;">
+                <div class="content">
+                    <div class="name">DEA</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nesciunt expedita facilis cupiditate est porro, dicta maiores quaerat sunt ea, repellendus unde optio nemo eos earum, recusandae ipsa dolorum quidem.</div>
+                     <button>See More</button>
+                </div>
+            </div>
+       </div>   
+       <div class="button">
+        <button class="prev"><i class='bx bx-skip-next-circle'></i></button>
+        <button class="next"><i class='bx bxs-skip-previous-circle' ></i></button>
+       </div>
+    </div>
+</body>
+<!-- <script src="script.js"></script> -->
+<script>
+    const $next = document.querySelector('.next');
+const $prev = document.querySelector('.prev');
+
+$next.addEventListener (
+    'click',
+    () => {
+        const items = document.querySelectorAll('.item');
+        document.querySelector('.slide').appendChild(items[0]);
+
+    },
+);
+
+$prev.addEventListener (
+    'click',
+    () => {
+        const items = document.querySelectorAll('.item');
+        document.querySelector('.slide').prepend(items[items.length -1]);
+
+    }, 
+);
+
+</script>
+</html>
